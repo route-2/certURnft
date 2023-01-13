@@ -30,7 +30,7 @@ const Dashboard: React.FunctionComponent<IDashboardProps> = (props) => {
         <p className='text-[3vmax] font-bold text-gray-800 ml-[10%]'>My Dashboard</p>
         <div className='grid grid-cols-4 gap-4 mx-[10%]' >
             {
-                nfts.map((nft:any)=>{
+                nfts.map((nft:any,id:number)=>{
                     const url = 'https://cloudflare-ipfs.com/ipfs/'+(nft.metadata.image).toString().slice(7);
                     console.log(url);
                     return(
